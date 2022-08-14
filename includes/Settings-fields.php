@@ -50,7 +50,7 @@ class Ecc_Settings_API_Test {
                     'label'   => __( 'Custom Cursor', 'ecc' ),
                     'desc'    => __( 'You can enable/disable custom cursor using this option.', 'ecc' ),
                     'type'    => 'radio',
-                    'default' => 'no',
+                    'default' => 'yes',
                     'options' => array(
                         'yes' => 'Enable',
                         'no'  => 'Disable'

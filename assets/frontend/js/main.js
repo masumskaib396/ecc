@@ -65,6 +65,7 @@
             if ($(window).width() < 768) {
                 if ('yes' === data.mobile_status) {
                     customCursor();
+                } else {
                     $('.dl-cursor').css('display', 'none');
                     $('.dl-fill').css('display', 'none');
                     $('.cursor-style-two').css('display', 'none');
@@ -72,9 +73,10 @@
                 }
             } else {
                 customCursor();
-                console.log("abc desk");
             }
         }
+
+        // customCursor();
     });
 
 })(jQuery);
