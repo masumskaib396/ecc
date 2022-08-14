@@ -1,10 +1,5 @@
 <?php
 
-/**
- * WordPress settings API demo class
- *
- * @author Tareq Hasan
- */
 if ( !class_exists('Ecc_Settings_API_Test' ) ):
 class Ecc_Settings_API_Test {
 
@@ -55,7 +50,7 @@ class Ecc_Settings_API_Test {
                     'label'   => __( 'Custom Cursor', 'ecc' ),
                     'desc'    => __( 'You can enable/disable custom cursor using this option.', 'ecc' ),
                     'type'    => 'radio',
-                    'default' => 'true',
+                    'default' => 'no',
                     'options' => array(
                         'yes' => 'Enable',
                         'no'  => 'Disable'
@@ -66,9 +61,9 @@ class Ecc_Settings_API_Test {
                 array(
                     'name'    => 'mobile_custom_cursor',
                     'label'   => __( 'Mobile Custom Cursor', 'ecc' ),
-                    'desc'    => __( 'You can enable/disable custom cursor for mobile devices using this option.', 'ecc' ),
+                    'desc'    => __( 'Disable/Enable on Mobile', 'ecc' ),
                     'type'    => 'radio',
-                    'default' => 'true',
+                    'default' => 'no',
                     'options' => array(
                         'yes' => 'Enable',
                         'no'  => 'Disable'
