@@ -246,7 +246,7 @@ class Ecc_Settings_API {
         $html .= $this->get_field_description( $args );
         $html .= '</fieldset>';
 
-        echo esc_html( $html);
+        printf("%s",  $html);
     }
 
     /**
@@ -329,7 +329,7 @@ class Ecc_Settings_API {
         $value = $this->get_option( $args['id'], $args['section'], $args['std'] );
         $size  = isset( $args['size'] ) && !is_null( $args['size'] ) ? $args['size'] : '500px';
 
-        echo '<div style="max-width: ' . $size . ';">';
+        echo '<div style="max-width: ' . esc_attr($size) . ';">';
 
         $editor_settings = array(
             'teeny'         => true,
